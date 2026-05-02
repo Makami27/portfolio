@@ -358,18 +358,83 @@ h2.section-title {
 }
 
 /* ─── PROJECTS ─────────────────────────────────────── */
-.carousel {
-  width: 100%;
+.carousel-wrapper {
   overflow: hidden;
+  width: 90%;
+}
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+}
+
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
   position: relative;
+  z-index: 900;
 }
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
 }
-.carousel-item {
-  min-width: 100%;
+.carousel__photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
 }
+.carousel__photo.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+}
+.carousel__button--prev {
+  left:0;
+}
+.carousel__button--next {
+  right:0;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -380,9 +445,7 @@ h2.section-title {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+
   transition: border-color .25s, transform .3s, box-shadow .3s;
 }
 .project-card:hover {
