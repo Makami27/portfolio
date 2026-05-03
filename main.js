@@ -1,37 +1,4 @@
-const inner = document.getElementById('carousel-inner');
-const items = document.querySelectorAll('.carousel-item');
-const next = document.getElementById('nextBtn');
-const prev = document.getElementById('prevBtn');
 
-let index = 0;
-
-function updateCarousel() {
-  // Wrap around logic
-  if (index >= items.length){
-    iindex=0
-  }
-  if (index < 0) index = items.length - 1;
-
-  // Move the container
-  inner.style.transform = `translateX(-${index * 100}%)`;
-}
-
-next.addEventListener('click', () => {
-  index++;
-  updateCarousel();
-});
-
-prev.addEventListener('click', () => {
-  index--;
-  updateCarousel();
-});
-
-// Optional: Auto-play every 3 seconds
-setInterval(() => {
-  index++;
-  updateCarousel();
-  console.log(items)
-}, 3000);
 
 
 // ── Navbar scroll shadow ──────────────────────────────
