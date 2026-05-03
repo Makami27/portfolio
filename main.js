@@ -1,6 +1,3 @@
-
-
-
 // ── Navbar scroll shadow ──────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
