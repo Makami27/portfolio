@@ -33,7 +33,9 @@ body {
 
 /* ─── NAVBAR ───────────────────────────────────────── */
 nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex; align-items: center; justify-content: space-between;
   padding: 1.1rem 5vw;
 
@@ -80,3 +82,117 @@ nav.scrolled { box-shadow: 0 0 40px rgba(0,229,192,.06); }
   border-radius: 2px;
   transition: .3s;
 }
+
+section {
+  padding: 1rem 5vw;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.lexi{
+  background-color: var(--border);
+  margin-top: 0rem;
+  padding: 1rem;
+  border-radius: 100%;
+  margin-right: .8rem;
+}
+
+
+.hero {
+
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin-inline: auto;
+  position: relative;
+  font-family: var(--font-head);
+  min-height: 10vh;
+}
+
+.heroChat{
+  background-color: var(--cyan);
+  padding: .5rem;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  font-family: var(--font-head);
+} 
+.heroChat1{
+  background-color: var(--cyan);
+  padding: .5rem;
+  border-radius: 7px;
+  border-bottom-right-radius: 0;
+  font-family: var(--font-head);
+
+} 
+
+
+.hero2 {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin-inline: auto;
+  position: relative;
+  font-family: var(--font-head);
+  min-height: 10vh;
+  justify-content: end;
+}
+
+
+
+/* ─── SKILLS ───────────────────────────────────────── */
+
+.skill-cont{
+  padding-top: 20vh;
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.4rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .7rem;
+  cursor: copy;
+  transition: border-color .25s, transform .25s, box-shadow .25s;
+  position: relative;
+  overflow: hidden;
+  margin: 1px;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: var(--cyan-glow);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.skill-card:hover { border-color: var(--cyan); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,229,192,.08); }
+
+.skill-card:hover::before { opacity: 1; }
+
+
+.skill-name {
+  font-size: .78rem;
+  letter-spacing: .08em;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+
+
+/* ─── FOOTER ───────────────────────────────────────── */
+/* ─── FOOTER ───────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .72rem;
+  color: #3a4560;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+footer span { color: var(--cyan); }
