@@ -43,6 +43,7 @@ nav {
   border-bottom: 1px solid var(--border);
   transition: box-shadow .3s;
 }
+
 nav.scrolled { box-shadow: 0 0 40px rgba(0,229,192,.06); }
 
 .nav-logo {
@@ -84,7 +85,6 @@ nav.scrolled { box-shadow: 0 0 40px rgba(0,229,192,.06); }
 }
 
 section {
-  padding: 1rem 5vw;
   max-width: 1100px;
   margin-inline: auto;
 }
@@ -92,6 +92,7 @@ section {
 .lexi{
   background-color: var(--border);
   margin-top: 0rem;
+  margin-right: 2rem;
   padding: 1rem;
   border-radius: 100%;
   margin-right: .8rem;
@@ -101,28 +102,29 @@ section {
 .hero {
 
   display: flex;
-  align-items:center;
+  align-items: end;
   max-width: 1100px;
   margin-inline: auto;
   position: relative;
   font-family: var(--font-head);
-  min-height: 0vh;
+  min-height: 10vh;
+  margin-right: 15vw;
 }
 
 .heroChat{
-  background-color: var(--cyan);
+  background-color: var(--cyan-glow);
   padding: .5rem;
   border-radius: 7px;
   border-bottom-left-radius: 0;
   font-family: var(--font-head);
 } 
 .heroChat1{
-  background-color: var(--cyan);
+  background-color: var(--bs-gray-500);
   padding: .5rem;
   border-radius: 7px;
   border-bottom-right-radius: 0;
   font-family: var(--font-head);
-
+  margin-right: 2vw;
 } 
 
 
@@ -137,7 +139,9 @@ section {
   justify-content: end;
 }
 
-
+p{
+  margin-bottom: 0;
+}
 
 /* ─── SKILLS ───────────────────────────────────────── */
 
