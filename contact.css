@@ -101,12 +101,12 @@ section {
 .hero {
 
   display: flex;
-  align-items: baseline;
+  align-items:center;
   max-width: 1100px;
   margin-inline: auto;
   position: relative;
   font-family: var(--font-head);
-  min-height: 5vh;
+  min-height: 0vh;
 }
 
 .heroChat{
@@ -133,7 +133,7 @@ section {
   margin-inline: auto;
   position: relative;
   font-family: var(--font-head);
-  min-height: 5vh;
+  min-height: 10vh;
   justify-content: end;
 }
 
