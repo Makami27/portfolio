@@ -113,6 +113,7 @@ section {
 
 .heroChat{
   background-color: var(--cyan-glow);
+  color: var(--cyan);
   padding: .5rem;
   border-radius: 7px;
   border-bottom-left-radius: 0;
@@ -147,6 +148,7 @@ p{
 
 .skill-cont{
   padding-top: 20vh;
+  margin: 10vw;
 }
 
 .skill-card {
@@ -190,7 +192,7 @@ p{
 /* ─── FOOTER ───────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);
-  padding: 2rem 5vw;
+  padding: 2rem 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
