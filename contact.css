@@ -133,7 +133,7 @@ section {
   margin-inline: auto;
   position: relative;
   font-family: var(--font-head);
-  min-height: 10vh;
+  min-height: 5vh;
   justify-content: end;
 }
 
