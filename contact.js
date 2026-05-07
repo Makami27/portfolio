@@ -58,21 +58,26 @@ const social = document.createElement("span");
 const social2 = document.createElement("span");
 const social3 = document.createElement("span");
 const social4 = document.createElement("span");
+const social5 = document.createElement("span");
 
 social.setAttribute("class", "cl");
-social.innerHTML = '<a href="index.html" >👑</a>';
+social.innerHTML = '<a href="index.html" ><i class="fa-brands fa-whatsapp"></a>';
 
 social2.setAttribute("class", "cl");
-social2.innerHTML = '<a href="index.html" >👑</a>';
+social2.innerHTML = '<a href="index.html" ><i class="fa-brands fa-x-twitter"></a>';
 
 social3.setAttribute("class", "cl");
-social3.innerHTML = '<a href="index.html" >👑</a>';
+social3.innerHTML = '<a href="index.html" ><i class="fa-brands fa-linkedin-in"</a>';
 
 social4.setAttribute("class", "cl");
-social4.innerHTML = '<a href="index.html">🧢</a>';
+social4.innerHTML = '<a href="https://github.com/Makami27"><i class="fa-brands fa-github"></a>';
+
+social5.setAttribute("class", "cl");
+social5.innerHTML = '<a href=""><i class="fa fa-envelope-open"></a>';
+
 
 const reply3 = document.createElement("div");
-reply3.textContent = "bot is typing...";
+reply3.textContent = "";
 reply3.setAttribute("class", "heroChat3")
 
 //New Question Bubble
@@ -132,5 +137,6 @@ btn3.addEventListener("click", () => {
     reply3.appendChild(social2);
     reply3.appendChild(social3);
     reply3.appendChild(social4);
-  }, 1000);
+    reply3.appendChild(social5);
+  }, 300);
 });

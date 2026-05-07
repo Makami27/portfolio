@@ -130,6 +130,7 @@ section {
 
 a{
   text-decoration: none;
+  color: var(--cyan-dim);
 }
 
 
@@ -143,7 +144,6 @@ a{
   border-radius: 7px;
   border-bottom-left-radius: 0;
   font-family: var(--font-head);
-
 } 
 .hero3 {
 
@@ -163,6 +163,7 @@ a{
   border-radius: 100%;
   border-color: black;
   font-size: 2rem;
+  color: var(--cyan-glow);
 }
 /*-----------------                              ---------------*/
 
