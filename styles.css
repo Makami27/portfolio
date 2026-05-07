@@ -94,7 +94,7 @@ nav.scrolled { box-shadow: 0 0 40px rgba(0,229,192,.06); }
 
 /* ─── SECTION WRAPPER ──────────────────────────────── */
 section {
-  padding: 7rem 5vw;
+  padding: 3rem 5vw;
   max-width: 1100px;
   margin-inline: auto;
 }
@@ -456,13 +456,22 @@ h2.section-title {
 .project-link svg { width: 13px; height: 13px; }
 
 /* ─── CONTACT ──────────────────────────────────────── */
+.contact-list{
+  font-size: 2rem;
+
+}
+
+.cl{
+  background-color: var(--bg);
+  padding: .8rem 3vw;
+  border-radius: 100%;
+  border-color: black;
+}
 
 
 .contact{
   font-size: 2rem;
-  
 }
-
 /* ─── FOOTER ───────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);
