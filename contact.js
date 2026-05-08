@@ -61,19 +61,19 @@ const social4 = document.createElement("span");
 const social5 = document.createElement("span");
 
 social.setAttribute("class", "cl");
-social.innerHTML = '<a href="index.html" ><i class="fa-brands fa-whatsapp"></a>';
+social.innerHTML = '<a href="https://wa.me/+2348164574431" ><i class="fa-brands fa-whatsapp"></a>';
 
 social2.setAttribute("class", "cl");
-social2.innerHTML = '<a href="index.html" ><i class="fa-brands fa-x-twitter"></a>';
+social2.innerHTML = '<a href="https://x.com/Makami_27" ><i class="fa-brands fa-x-twitter"></a>';
 
 social3.setAttribute("class", "cl");
-social3.innerHTML = '<a href="index.html" ><i class="fa-brands fa-linkedin-in"</a>';
+social3.innerHTML = '<a href="https://www.linkedin.com/in/makami-kamsi" ><i class="fa-brands fa-linkedin-in"</a>';
 
 social4.setAttribute("class", "cl");
 social4.innerHTML = '<a href="https://github.com/Makami27"><i class="fa-brands fa-github"></a>';
 
 social5.setAttribute("class", "cl");
-social5.innerHTML = '<a href=""><i class="fa fa-envelope-open"></a>';
+social5.innerHTML = '<a href="https://malito:makamikamsi@gmail.com"><i class="fa fa-envelope-open"></a>';
 
 
 const reply3 = document.createElement("div");
