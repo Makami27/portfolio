@@ -20,7 +20,7 @@ qDiv.setAttribute("class", "hero2");
 
 const newQuestion1 = document.createElement("div");
 newQuestion1.setAttribute("class", "heroChat1 ");
-newQuestion1.textContent = "Who is Makami";
+newQuestion1.textContent = "Who is Kamsi";
 
 //btn 2-------------------------------------------------------------
 
